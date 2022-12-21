@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(233, 47%, 7%);
+  font-family: 'Inter', 'Lexend Deca', sans-serif;
+}
+.container{
+  padding: 40px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.main{
+  width: 100%;
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  border-radius: 5px;
+}
+
+.image{
+  background-image: url(/images/image-header-desktop.jpg);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.image img{
+  display: none;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(277, 64%, 61%, 0.6);
+}
+
+
+.left-write-up{
+  padding: 50px;
+}
+.left-write-up h1{
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 28px;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 38px;
+}
+.left-write-up h1 span{
+  color: hsl(277, 64%, 61%);
+}
+.left-write-up p{
+  color: hsl(0, 0%, 80%);
+  font-family: 'Inter';
+  font-weight: 400;
+}
+
+.companies-num{
+  padding-top: 60px;
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+}
+.companies-num .num p{
+  font-size: 13px;
+  color: hsl(0, 0%, 80%);
+  font-family: 'Lexend Deca';
+}
+
+footer .attribution{
+  text-align: center;
+  color: hsl(0, 0%, 80%);
+}
+footer .attribution a{
+  text-align: center;
+  color: hsl(277, 64%, 61%);
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .container{
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .main{
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+    flex-direction: column-reverse;
+  }
+
+  .image img{
+    display: block;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+  }
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 64%, 61%, 0.6);
+  }
+
+  .left-write-up{
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+  }
+
+  .left-write-up h1{
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 24px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 26px;
+  }
+  .left-write-up h1 span{
+    color: hsl(277, 64%, 61%);
+  }
+  .left-write-up p{
+    color: hsl(0, 0%, 80%);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .companies-num{
+    padding-top: 60px;
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+  }
+  .companies-num .num p{
+    font-size: 13px;
+    color: hsl(0, 0%, 80%);
+    font-family: 'Lexend Deca';
+  }
+  footer .attribution{
+    text-align: center;
+    color: hsl(0, 0%, 80%);
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  footer .attribution a{
+    color: hsl(277, 64%, 61%);
+  }
+}
