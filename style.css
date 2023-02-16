@@ -9,14 +9,14 @@ body{
   background-color: hsl(233, 47%, 7%);
   font-family: 'Inter', 'Lexend Deca', sans-serif;
 }
-.container{
+main{
   padding: 40px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 90vh;
 }
-.main{
+.container{
   width: 100%;
   background-color: hsl(244, 38%, 16%);
   display: flex;
@@ -91,7 +91,7 @@ footer .attribution a{
 
 @media screen and (max-width: 500px) {
 
-  .container{
+  main{
     padding: 40px 30px;
     display: flex;
     justify-content: center;
@@ -99,7 +99,7 @@ footer .attribution a{
     min-height: 100vh;
   }
 
-  .main{
+  main{
     width: 100%;
     background-color: hsl(244, 38%, 16%);
     flex-direction: column-reverse;
